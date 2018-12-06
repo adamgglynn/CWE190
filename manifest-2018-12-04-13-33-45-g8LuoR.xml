@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<container>
+  <testcase id="84688" type="Source Code" status="Accepted" submissionDate="2013-05-20" language="C++" author="NSA/Center for Assured Software" numberOfFiles="5" testsuiteid="86 108">
+    <description><![CDATA[CWE: 190 Integer Overflow<br/> BadSource: rand Set data to result of rand()<br/> GoodSource: Set data to a small, non-zero number (two)<br/> Sinks: square<br/> GoodSink: Ensure there will not be an overflow before squaring data<br/> BadSink : Square data, which can lead to overflow<br/> Flow Variant: 62 Data flow: data flows using a C++ reference from one function to another in different source files]]></description>
+    <file path="000/084/688/CWE190_Integer_Overflow__unsigned_int_rand_square_62a.cpp" language="C++" size="2946" checksum="81ef763b890832672e164884d479e87810e8391f">
+      <mixed line="37" name="CWE-190: Integer Overflow or Wraparound"/>
+    </file>
+    <file path="000/084/688/CWE190_Integer_Overflow__unsigned_int_rand_square_62b.cpp" language="C++" size="1380" checksum="a585fc9422119b9c98712cd6ab2b9d71e1116a1a"/>
+    <file path="shared/108/std_testcase.h" language="C" size="4004" checksum="d1801c64bc49d5d05fb3d55f7cc7e3a925c47e2f"/>
+    <file path="shared/108/std_testcase_io.h" language="C" size="1457" checksum="56de16829d5ac9d8086670ee5098217aa6694d26"/>
+    <file path="shared/108/io.c" language="C" size="5429" checksum="bcf531cb1922c03347031698c1c72eddadbf0d88"/>
+  </testcase>
+</container>
